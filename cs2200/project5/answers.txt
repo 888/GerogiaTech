@@ -1,0 +1,52 @@
+CS 2200 Fall 2016
+Project 5
+Name:
+GT Number:
+
+Problem 1B
+----------
+CPUS    Execution Time (s)
+1 CPU:  67.6
+2 CPU:  35.8
+4 CPU:  33
+
+There is not a linear relationship between the number of CPU's and execution time. CPU's can help execution time, but
+are not it's only factor. Other major factors could be:
+Time spent in IO.
+Number of processes running.
+Number of CPUs has no affect on the time spent in IO, and if CPUs outnumber processes, the additional ones are idle.
+As a test, I ran FIFO with 8 CPUs and found that the execution time was VERY slightly worse than  4 CPUs, telling me
+that the execution time in this case is bound by these factors.
+The added execution time was probably due to a longer time having to search through the linked list.
+
+Problem 2B
+----------
+timeslice   Total Wait Time (s)
+800ms:      228.8
+600ms:      182
+400ms:      134.5
+200ms:      71.2
+
+The shortest timeslice would not be the best choice in a real OS because the time required to switch out a process is
+significantly longer and can cause thrashing if the timeslice is too low.
+On the other hand, processes switching requires practically no time at all in our simulator, and so a shorter timeslice
+is better because it means that a process will be wasting less time (if a process needs an additional 400 ms, but is
+alloted 800ms, 400ms are wasted).
+
+Problem 3B
+----------
+Round robin also has the timeslice as a dependent, since a timeslice was not specified in the problem i will be using
+100ms
+
+Algorithm       Total wait time (s)
+FIFO            389.9
+Priority        195.7
+RR              41
+
+Round Robin with a short wait time is the closest approximation of SJF. The first reason for this would be that
+SJF "is proven to have optimal average waiting time" and this is consistent with my results.
+
+The second and more conception reason is that in RR, the shortest job WILL complete first. While longer jobs
+will be allowed to run intermittently, they will not finish before the shorter jobs since they are all given equal
+time slices. FIFO and Priority on the other hand, allow which ever process is running (assuming no preempts) finish
+before starting another, regardless of how long they need to run for.
