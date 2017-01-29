@@ -1,4 +1,0 @@
-minimumRemainingValuesHeuristic
-assignment csps/cspT.assignment
-csp csps/cspT.csp
-hint Failing when there is only one variable

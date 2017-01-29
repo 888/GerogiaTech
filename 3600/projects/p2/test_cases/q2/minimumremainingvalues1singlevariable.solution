@@ -1,2 +1,0 @@
-correct = 'T'
-success = (result == correct)

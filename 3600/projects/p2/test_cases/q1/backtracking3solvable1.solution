@@ -1,2 +1,0 @@
-correct = {'A':'G', 'B':'B', 'C':'G', 'D':'R', 'E':'B', 'F':'G', 'G':'R'}
-success = result == correct

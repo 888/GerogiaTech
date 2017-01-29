@@ -1,5 +1,0 @@
-leastConstrainingValuesHeuristic
-assignment csps/csp7C.assignment
-csp csps/csp7.csp
-variable B
-hint Incorrect ordering

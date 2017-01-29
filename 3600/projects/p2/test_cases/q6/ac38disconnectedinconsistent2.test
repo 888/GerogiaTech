@@ -1,4 +1,0 @@
-AC3
-assignment csps/csp2C.assignment
-csp csps/csp2.csp
-hint Invalid partial, make sure that you begin with all constraints to account for disconnected subproblems

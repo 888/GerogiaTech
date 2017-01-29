@@ -1,4 +1,0 @@
-minimumRemainingValuesHeuristic
-assignment csps/cspX.assignment
-csp csps/cspX.csp
-hint Failing with degree tiebreaker

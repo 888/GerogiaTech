@@ -1,3 +1,0 @@
-RGBset = set(['R', 'G', 'B'])
-correct = {'A': RGBset, 'B': RGBset, 'C': RGBset, 'D': RGBset, 'E': RGBset, 'F': RGBset, 'G': RGBset}
-success = (result.varDomains == correct)

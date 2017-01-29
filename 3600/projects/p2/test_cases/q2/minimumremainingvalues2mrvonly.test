@@ -1,4 +1,0 @@
-minimumRemainingValuesHeuristic
-assignment csps/cspXA.assignment
-csp csps/cspX.csp
-hint Failing when different numbers of values remaining

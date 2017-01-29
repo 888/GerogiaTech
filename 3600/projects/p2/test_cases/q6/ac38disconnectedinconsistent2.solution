@@ -1,2 +1,0 @@
-correct = None
-success = (result == None)

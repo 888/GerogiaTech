@@ -1,2 +1,0 @@
-correct = [('B','R','G'), ('R','B','G'), ('B','R','G')]
-success = all([rV in pV for rV,pV in zip(result,correct)])

@@ -1,1 +1,0 @@
-Attatched is the javascript file I wrote "generateQueensCSP.js", which will generate a csp problem for a queens problem for any board of sized nxn, where n is specified by changing the value of "boardLength" at the top of the file. 

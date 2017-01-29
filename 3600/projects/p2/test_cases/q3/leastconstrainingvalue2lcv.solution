@@ -1,2 +1,0 @@
-correct = ['B', 'G', 'R']
-success = (result == correct)
