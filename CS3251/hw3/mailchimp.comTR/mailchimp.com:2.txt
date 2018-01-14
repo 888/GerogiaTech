@@ -1,9 +1,0 @@
-time: 2017-04-05 11:06:42.770219
-
-traceroute to mailchimp.com (184.29.187.196), 30 hops max, 60 byte packets
- 1  resnet1-rtr-128-61-80-1.gatech.edu (128.61.80.1)  0.475 ms  0.460 ms  0.448 ms
- 2  campus1-rtr-130-207-254-137.gatech.edu (130.207.254.137)  0.514 ms  0.505 ms  0.502 ms
- 3  bcdc-gw1-rtr.gatech.edu (130.207.254.153)  0.686 ms  0.682 ms  0.901 ms
- 4  143.215.194.109 (143.215.194.109)  1.051 ms  1.052 ms  1.044 ms
- 5  206.123.24.105 (206.123.24.105)  1.044 ms  1.034 ms  1.026 ms
- 6  a184-29-187-196.deploy.static.akamaitechnologies.com (184.29.187.196)  1.105 ms  1.141 ms  0.944 ms
