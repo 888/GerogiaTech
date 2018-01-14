@@ -1,0 +1,15 @@
+time: 2017-04-05 11:15:15.986239
+
+traceroute to hazelroad.com (198.185.159.144), 30 hops max, 60 byte packets
+ 1  resnet1-rtr-128-61-80-1.gatech.edu (128.61.80.1)  0.541 ms  0.535 ms  0.530 ms
+ 2  campus1-rtr-130-207-254-137.gatech.edu (130.207.254.137)  1.176 ms  1.167 ms  1.166 ms
+ 3  bcdc-gw1-rtr.gatech.edu (130.207.254.153)  0.883 ms  0.876 ms  0.866 ms
+ 4  atx-edge-04.inet.qwest.net (65.114.55.137)  1.203 ms  0.995 ms  0.989 ms
+ 5  * * *
+ 6  ix-ae-22-0.tcore2.A56-Atlanta.as6453.net (64.86.8.50)  1.175 ms  1.247 ms  1.239 ms
+ 7  if-ae-21-2.tcore1.AEQ-Ashburn.as6453.net (66.198.154.24)  12.722 ms  13.009 ms  13.034 ms
+ 8  66.198.154.66 (66.198.154.66)  12.843 ms * 66.198.154.186 (66.198.154.186)  12.973 ms
+ 9  unknown.prolexic.com (209.200.144.192)  12.513 ms unknown.prolexic.com (209.200.144.202)  15.149 ms unknown.prolexic.com (209.200.144.194)  12.522 ms
+10  unknown.prolexic.com (209.200.144.205)  27.494 ms *  27.795 ms
+11  unknown.prolexic.com (209.200.169.128)  32.967 ms  32.812 ms unknown.prolexic.com (209.200.148.130)  32.138 ms
+12  198.185.159.144 (198.185.159.144)  32.689 ms  31.793 ms  31.883 ms
