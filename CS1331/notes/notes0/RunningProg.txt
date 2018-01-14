@@ -1,0 +1,5 @@
+To run a program, in the command prompt:
+Go to directory
+Compile program --> javac {}.java    //where {} is the name of the program
+run --> java {}
+notice, no extension to run the program 

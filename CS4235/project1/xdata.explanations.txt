@@ -1,0 +1,9 @@
+array[18] = system
+array[20] = "sh"
+"/bin/sh" at 0xb7f76a24
+system   	0xb7e56190
+swap		0xbffff6bc
+array  	 	0xbffff684
+
+framepointer at array[17]
+function return address at array[18]

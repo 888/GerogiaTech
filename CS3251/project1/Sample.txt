@@ -1,0 +1,51 @@
+UDP Server:
+	$ python3 smsengineUDP.py 8888 ../words.txt
+	server running at 127.0.0.1: 8888
+	Ctrl+c to close server
+	Recieving Data from 127.0.0.1
+
+	Recieved:  b'TEST spam test 1 2 3 4 5 6 7'
+	Responding:  3 0.3 TEST spam test
+
+	---------------------------
+
+
+UDP Client (Response Recieved):
+	$ python3 smsclientUDP.py 127.0.0.1 8888python3 smsengineTCP.py 8888 ../msg.txt 
+	Response From Server:
+	  3 0.3 TEST spam test
+
+
+
+UDP Client (Response Not Recieved):
+	$ python3 smsclientUDP.py 127.0.0.1 8080 ../msg.txt 
+	The server has not answered in the last two seconds.
+	Retrying...
+
+	The server has not answered in the last two seconds.
+	Retrying...
+
+	The server has not answered in the last two seconds.
+	Retrying...
+
+	Error! Server isn't responding
+
+
+TCP Server:
+	$ python3 smsengineTCP.py 8080 ../words.txt 
+	server running at 127.0.0.1: 8888
+	Ctrl+c to close server
+	Connection Established
+
+	Recieved:  b'TEST spam test 1 2 3 4 5 6 7' 
+
+	Responding:  3 0.3 TEST spam test
+
+	Connection Closed
+-----------------------------------
+
+
+TCP Client:
+	$ python3 smsclientTCP.py 127.0.0.1 8080 ../msg.txt 
+	Response From Server:
+	  3 0.3 TEST spam test

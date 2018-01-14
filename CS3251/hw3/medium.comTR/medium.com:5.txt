@@ -1,0 +1,11 @@
+time: 2017-04-06 21:46:12.907640
+
+traceroute to medium.com (104.16.123.127), 30 hops max, 60 byte packets
+ 1  resnet1-rtr-128-61-80-1.gatech.edu (128.61.80.1)  0.475 ms  0.457 ms  0.457 ms
+ 2  campus1-rtr-130-207-254-137.gatech.edu (130.207.254.137)  0.505 ms  0.495 ms  0.493 ms
+ 3  bcdc-gw1-rtr.gatech.edu (130.207.254.153)  0.853 ms  0.844 ms  0.839 ms
+ 4  * atx-edge-04.inet.qwest.net (65.114.55.137)  1.174 ms  1.955 ms
+ 5  * * *
+ 6  63.146.27.198 (63.146.27.198)  1.144 ms  1.115 ms  1.442 ms
+ 7  cloudflare-ic-318417-atl-bb1.c.telia.net (62.115.148.137)  11.942 ms  11.932 ms cloudflare-ic-301665-atl-bb1.c.telia.net (62.115.32.222)  1.066 ms
+ 8  104.16.123.127 (104.16.123.127)  11.784 ms  1.192 ms  1.181 ms

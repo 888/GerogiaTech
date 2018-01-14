@@ -1,0 +1,3 @@
+How i got private key:
+	I used wolframalpha to find the factors of N.
+	I then found methods for modulo inverse online (http://stackoverflow.com/questions/4798654/modular-multiplicative-inverse-function-in-python ) and applied the steps in the pdf to get d.

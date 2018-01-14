@@ -1,0 +1,3 @@
+grant_access = 0x804844d
+buff = 0xbffff6e8
+eip = 0xbffff6fc
